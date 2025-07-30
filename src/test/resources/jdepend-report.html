@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>JDepend Metrics Report</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <section><a id="JDepend_Metrics_Report"></a>
+        <h1>JDepend Metrics Report</h1>The following document contains the results of a <a
+            href="https://github.com/clarkware/jdepend">JDepend</a> metric analysis. The various metrics are defined at the bottom of this
+        document.<br /><br />
+        <section><a id="Summary"></a>
+            <h2>Summary</h2>
+            <table class="bodyTable bodyTableBorder">
+                <tr class="a">
+                    <th>Package</th>
+                    <th>TC</th>
+                    <th>CC</th>
+                    <th>AC</th>
+                    <th>Ca</th>
+                    <th>Ce</th>
+                    <th>A</th>
+                    <th>I</th>
+                    <th>D</th>
+                    <th>Cycles</th>
+                    <th>package-info</th>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.application.eventstore">com.reallifedeveloper.common.application.eventstore</a>
+                    </td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">8</td>
+                    <td style="text-align: center;">25%</td>
+                    <td style="text-align: center;">80%</td>
+                    <td style="text-align: center;">5%</td>
+                    <td style="text-align: center;">true</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.application.notification">com.reallifedeveloper.common.application.notification</a>
+                    </td>
+                    <td style="text-align: center;">10</td>
+                    <td style="text-align: center;">6</td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">11</td>
+                    <td style="text-align: center;">40%</td>
+                    <td style="text-align: center;">73%</td>
+                    <td style="text-align: center;">13%</td>
+                    <td style="text-align: center;">true</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;"><a href="#com.reallifedeveloper.common.domain">com.reallifedeveloper.common.domain</a>
+                    </td>
+                    <td style="text-align: center;">11</td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">8</td>
+                    <td style="text-align: center;">11</td>
+                    <td style="text-align: center;">5</td>
+                    <td style="text-align: center;">73%</td>
+                    <td style="text-align: center;">31%</td>
+                    <td style="text-align: center;">4%</td>
+                    <td style="text-align: center;">false</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.domain.event">com.reallifedeveloper.common.domain.event</a></td>
+                    <td style="text-align: center;">8</td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">8</td>
+                    <td style="text-align: center;">50%</td>
+                    <td style="text-align: center;">67%</td>
+                    <td style="text-align: center;">17%</td>
+                    <td style="text-align: center;">true</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.domain.registry">com.reallifedeveloper.common.domain.registry</a></td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">5</td>
+                    <td style="text-align: center;">50%</td>
+                    <td style="text-align: center;">71%</td>
+                    <td style="text-align: center;">21%</td>
+                    <td style="text-align: center;">true</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.infrastructure">com.reallifedeveloper.common.infrastructure</a></td>
+                    <td style="text-align: center;">8</td>
+                    <td style="text-align: center;">8</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">15</td>
+                    <td style="text-align: center;">0%</td>
+                    <td style="text-align: center;">100%</td>
+                    <td style="text-align: center;">0%</td>
+                    <td style="text-align: center;">true</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.infrastructure.jmx">com.reallifedeveloper.common.infrastructure.jmx</a></td>
+                    <td style="text-align: center;">6</td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">15</td>
+                    <td style="text-align: center;">50%</td>
+                    <td style="text-align: center;">100%</td>
+                    <td style="text-align: center;">50%</td>
+                    <td style="text-align: center;">false</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.infrastructure.messaging">com.reallifedeveloper.common.infrastructure.messaging</a>
+                    </td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">13</td>
+                    <td style="text-align: center;">0%</td>
+                    <td style="text-align: center;">100%</td>
+                    <td style="text-align: center;">0%</td>
+                    <td style="text-align: center;">true</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.infrastructure.persistence">com.reallifedeveloper.common.infrastructure.persistence</a>
+                    </td>
+                    <td style="text-align: center;">6</td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">11</td>
+                    <td style="text-align: center;">33%</td>
+                    <td style="text-align: center;">100%</td>
+                    <td style="text-align: center;">33%</td>
+                    <td style="text-align: center;">true</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;"><a href="#com.reallifedeveloper.common.resource">com.reallifedeveloper.common.resource</a>
+                    </td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">12</td>
+                    <td style="text-align: center;">0%</td>
+                    <td style="text-align: center;">86%</td>
+                    <td style="text-align: center;">14%</td>
+                    <td style="text-align: center;">false</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.resource.documentation">com.reallifedeveloper.common.resource.documentation</a>
+                    </td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">2</td>
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">1</td>
+                    <td style="text-align: center;">9</td>
+                    <td style="text-align: center;">33%</td>
+                    <td style="text-align: center;">90%</td>
+                    <td style="text-align: center;">23%</td>
+                    <td style="text-align: center;">false</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;"><a
+                            href="#com.reallifedeveloper.common.resource.notification">com.reallifedeveloper.common.resource.notification</a>
+                    </td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">4</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">13</td>
+                    <td style="text-align: center;">0%</td>
+                    <td style="text-align: center;">100%</td>
+                    <td style="text-align: center;">0%</td>
+                    <td style="text-align: center;">true</td>
+                    <td style="text-align: center;">true</td>
+                </tr>
+            </table>
+        </section>
+        <section><a id="Packages"></a>
+            <h2>Packages</h2>
+            <section><a id="com.reallifedeveloper.common.application.eventstore"></a>
+                <h3>com.reallifedeveloper.common.application.eventstore</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.eventstore.StoredEventRepository</li>
+                    </ul>
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.eventstore.EventStore</li>
+                        <li>com.reallifedeveloper.common.application.eventstore.EventStoringSubscriber</li>
+                        <li>com.reallifedeveloper.common.application.eventstore.StoredEvent</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence</li>
+                    </ul>
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>jakarta.persistence</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.time</li>
+                        <li>java.util</li>
+                        <li>org.slf4j</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                    </ul><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.application.notification"></a>
+                <h3>com.reallifedeveloper.common.application.notification</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.notification.NotificationPublisher</li>
+                        <li>com.reallifedeveloper.common.application.notification.NotificationReader</li>
+                        <li>com.reallifedeveloper.common.application.notification.PublishedMessageTracker</li>
+                        <li>com.reallifedeveloper.common.application.notification.PublishedMessageTrackerRepository</li>
+                    </ul>
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.notification.Notification</li>
+                        <li>com.reallifedeveloper.common.application.notification.NotificationFactory</li>
+                        <li>com.reallifedeveloper.common.application.notification.NotificationLog</li>
+                        <li>com.reallifedeveloper.common.application.notification.NotificationLogId</li>
+                        <li>com.reallifedeveloper.common.application.notification.NotificationPublisherTask</li>
+                        <li>com.reallifedeveloper.common.application.notification.NotificationService</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.infrastructure</li>
+                        <li>com.reallifedeveloper.common.infrastructure.messaging</li>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence</li>
+                        <li>com.reallifedeveloper.common.resource.notification</li>
+                    </ul>
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.eventstore</li>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>java.io</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.lang.runtime</li>
+                        <li>java.time</li>
+                        <li>java.util</li>
+                        <li>org.slf4j</li>
+                        <li>org.springframework.transaction.annotation</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                    </ul><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.domain"></a>
+                <h3>com.reallifedeveloper.common.domain</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.AbstractValueObject</li>
+                        <li>com.reallifedeveloper.common.domain.AggregateRoot</li>
+                        <li>com.reallifedeveloper.common.domain.DomainEntity</li>
+                        <li>com.reallifedeveloper.common.domain.DomainObject</li>
+                        <li>com.reallifedeveloper.common.domain.ObjectSerializer</li>
+                        <li>com.reallifedeveloper.common.domain.Repository</li>
+                        <li>com.reallifedeveloper.common.domain.TimeService</li>
+                        <li>com.reallifedeveloper.common.domain.ValueObject</li>
+                    </ul>
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.ClockTimeService</li>
+                        <li>com.reallifedeveloper.common.domain.ErrorHandling</li>
+                        <li>com.reallifedeveloper.common.domain.LogUtil</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.eventstore</li>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.infrastructure</li>
+                        <li>com.reallifedeveloper.common.infrastructure.jmx</li>
+                        <li>com.reallifedeveloper.common.infrastructure.messaging</li>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence</li>
+                        <li>com.reallifedeveloper.common.resource</li>
+                        <li>com.reallifedeveloper.common.resource.documentation</li>
+                        <li>com.reallifedeveloper.common.resource.notification</li>
+                    </ul>
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>java.io</li>
+                        <li>java.lang</li>
+                        <li>java.time</li>
+                        <li>java.util</li>
+                        <li>org.checkerframework.checker.nullness.qual</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>There are no cyclic dependencies.<br /><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.domain.event"></a>
+                <h3>com.reallifedeveloper.common.domain.event</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.event.AbstractDomainEvent</li>
+                        <li>com.reallifedeveloper.common.domain.event.DomainEvent</li>
+                        <li>com.reallifedeveloper.common.domain.event.DomainEventPublisher</li>
+                        <li>com.reallifedeveloper.common.domain.event.DomainEventSubscriber</li>
+                    </ul>
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.event.EventSavingSubscriber</li>
+                        <li>com.reallifedeveloper.common.domain.event.LoggingDomainEventSubscriber</li>
+                        <li>com.reallifedeveloper.common.domain.event.SimpleDomainEventPublisher</li>
+                        <li>com.reallifedeveloper.common.domain.event.ThreadLocalDomainEventPublisher</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.eventstore</li>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.infrastructure</li>
+                    </ul>
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>java.io</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.time</li>
+                        <li>java.util</li>
+                        <li>org.slf4j</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                    </ul><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.domain.registry"></a>
+                <h3>com.reallifedeveloper.common.domain.registry</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.registry.AbstractDomainRegistry</li>
+                    </ul>
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.registry.CommonDomainRegistry</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence</li>
+                    </ul>
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>java.lang</li>
+                        <li>java.util.concurrent.locks</li>
+                        <li>org.springframework.context</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                    </ul><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.infrastructure"></a>
+                <h3>com.reallifedeveloper.common.infrastructure</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>-
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.infrastructure.GsonNotificationReader</li>
+                        <li>com.reallifedeveloper.common.infrastructure.GsonNotificationReader$JsonUtil</li>
+                        <li>com.reallifedeveloper.common.infrastructure.GsonObjectSerializer</li>
+                        <li>com.reallifedeveloper.common.infrastructure.GsonObjectSerializer$LocalDateAdapter</li>
+                        <li>com.reallifedeveloper.common.infrastructure.GsonObjectSerializer$LocalDateTmeAdapter</li>
+                        <li>com.reallifedeveloper.common.infrastructure.GsonObjectSerializer$NotificationDeserializer</li>
+                        <li>com.reallifedeveloper.common.infrastructure.GsonObjectSerializer$ZonedDateTmeAdapter</li>
+                        <li>com.reallifedeveloper.common.infrastructure.Markdown4jHtmlProducer</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>-
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.google.gson</li>
+                        <li>com.google.gson.stream</li>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.resource.documentation</li>
+                        <li>java.io</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.lang.reflect</li>
+                        <li>java.time</li>
+                        <li>java.time.format</li>
+                        <li>java.util</li>
+                        <li>org.markdown4j</li>
+                        <li>org.slf4j</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                    </ul><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.infrastructure.jmx"></a>
+                <h3>com.reallifedeveloper.common.infrastructure.jmx</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.infrastructure.jmx.ConnectionPoolConfiguratorMXBean</li>
+                        <li>com.reallifedeveloper.common.infrastructure.jmx.LogConfiguratorMXBean</li>
+                        <li>com.reallifedeveloper.common.infrastructure.jmx.SystemInfoMXBean</li>
+                    </ul>
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.infrastructure.jmx.Log4jConfigurator</li>
+                        <li>com.reallifedeveloper.common.infrastructure.jmx.ServletContextSystemInfo</li>
+                        <li>com.reallifedeveloper.common.infrastructure.jmx.TomcatConnectionPoolConfigurator</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>-
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>jakarta.servlet</li>
+                        <li>java.io</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.util</li>
+                        <li>java.util.jar</li>
+                        <li>java.util.stream</li>
+                        <li>org.apache.logging.log4j</li>
+                        <li>org.apache.logging.log4j.core</li>
+                        <li>org.apache.logging.log4j.core.config</li>
+                        <li>org.apache.tomcat.jdbc.pool</li>
+                        <li>org.slf4j</li>
+                        <li>org.springframework.jmx.export.annotation</li>
+                        <li>org.springframework.web.context</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>There are no cyclic dependencies.<br /><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.infrastructure.messaging"></a>
+                <h3>com.reallifedeveloper.common.infrastructure.messaging</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>-
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.infrastructure.messaging.KafkaNotificationPublisher</li>
+                        <li>com.reallifedeveloper.common.infrastructure.messaging.KafkaSecurityConfiguration</li>
+                        <li>com.reallifedeveloper.common.infrastructure.messaging.RabbitMQNotificationPublisher</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>-
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.rabbitmq.client</li>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>java.io</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.nio.file</li>
+                        <li>java.util</li>
+                        <li>java.util.concurrent</li>
+                        <li>org.apache.kafka.common.config</li>
+                        <li>org.slf4j</li>
+                        <li>org.springframework.core.io</li>
+                        <li>org.springframework.kafka.core</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                    </ul><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.infrastructure.persistence"></a>
+                <h3>com.reallifedeveloper.common.infrastructure.persistence</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence.JpaPublishedMessageTrackerRepository</li>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence.JpaStoredEventRepository</li>
+                    </ul>
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence.BaseJpaEntity</li>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence.BaseJpaRepository</li>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence.JpaPublishedMessageTracker</li>
+                        <li>com.reallifedeveloper.common.infrastructure.persistence.TimestampedJpaEntity</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>-
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.eventstore</li>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>jakarta.persistence</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.lang.reflect</li>
+                        <li>java.time</li>
+                        <li>java.util</li>
+                        <li>org.springframework.data.jpa.repository</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                    </ul><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.resource"></a>
+                <h3>com.reallifedeveloper.common.resource</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>-
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.resource.BaseResource</li>
+                        <li>com.reallifedeveloper.common.resource.ResourceUtil</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.resource.documentation</li>
+                        <li>com.reallifedeveloper.common.resource.notification</li>
+                    </ul>
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>jakarta.ws.rs</li>
+                        <li>jakarta.ws.rs.core</li>
+                        <li>java.io</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.net</li>
+                        <li>java.time</li>
+                        <li>java.time.format</li>
+                        <li>java.util</li>
+                        <li>java.util.stream</li>
+                        <li>org.slf4j</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>There are no cyclic dependencies.<br /><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.resource.documentation"></a>
+                <h3>com.reallifedeveloper.common.resource.documentation</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.resource.documentation.HtmlProducer</li>
+                    </ul>
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.resource.documentation.DocumentationResource</li>
+                        <li>com.reallifedeveloper.common.resource.documentation.DocumentationResource$1</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.infrastructure</li>
+                    </ul>
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>com.reallifedeveloper.common.resource</li>
+                        <li>jakarta.ws.rs</li>
+                        <li>jakarta.ws.rs.core</li>
+                        <li>java.io</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.net</li>
+                        <li>java.util</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>There are no cyclic dependencies.<br /><br />
+                </section>
+            </section>
+            <section><a id="com.reallifedeveloper.common.resource.notification"></a>
+                <h3>com.reallifedeveloper.common.resource.notification</h3>
+                <section><a id="Abstract_Classes"></a>
+                    <h4>Abstract Classes</h4>-
+                </section>
+                <section><a id="Concrete_Classes"></a>
+                    <h4>Concrete Classes</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.resource.notification.NotificationLogRepresentation</li>
+                        <li>com.reallifedeveloper.common.resource.notification.NotificationRepresentation</li>
+                        <li>com.reallifedeveloper.common.resource.notification.NotificationResource</li>
+                        <li>com.reallifedeveloper.common.resource.notification.NotificationResource$Links</li>
+                    </ul>
+                </section>
+                <section><a id="Used_by_Packages"></a>
+                    <h4>Used by Packages</h4>-
+                </section>
+                <section><a id="Uses_Packages"></a>
+                    <h4>Uses Packages</h4>
+                    <ul>
+                        <li>com.fasterxml.jackson.annotation</li>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain</li>
+                        <li>com.reallifedeveloper.common.resource</li>
+                        <li>jakarta.ws.rs</li>
+                        <li>jakarta.ws.rs.core</li>
+                        <li>jakarta.xml.bind.annotation</li>
+                        <li>java.lang</li>
+                        <li>java.lang.invoke</li>
+                        <li>java.net</li>
+                        <li>java.time</li>
+                        <li>java.util</li>
+                        <li>org.slf4j</li>
+                    </ul>
+                </section>
+                <section><a id="Cycles"></a>
+                    <h4>Cycles</h4>
+                    <ul>
+                        <li>com.reallifedeveloper.common.application.notification</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                        <li>com.reallifedeveloper.common.domain.registry</li>
+                        <li>com.reallifedeveloper.common.domain.event</li>
+                    </ul><br />
+                </section>
+            </section>
+        </section>
+        <section><a id="Explanation"></a>
+            <h2>Explanation</h2>The following explanations are for quick reference and are lifted directly from the original JDepend
+            documentation. For more information, see the <a href="https://en.wikipedia.org/wiki/Software_package_metrics">Wikipedia</a>
+            page.<br /><br />
+            <table class="bodyTable bodyTableBorder">
+                <tr class="a">
+                    <th>Term</th>
+                    <th>Description</th>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;">Number of Classes (TC, CC, AC)</td>
+                    <td style="text-align: left;">The number of concrete and abstract classes (and interfaces) in the package is an
+                        indicator of the extensibility of the package.</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;">Afferent Couplings (Ca)</td>
+                    <td style="text-align: left;">The number of incoming dependencies, i.e., other packages that depend upon classes within
+                        the package. This is an indicator of the package's responsibility.</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;">Efferent Couplings (Ce)</td>
+                    <td style="text-align: left;">The number of outgoing dependencies, i.e., other packages that the classes in the package
+                        depend upon. This is an indicator of the package's independence.</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;">Abstractness (A)</td>
+                    <td style="text-align: left;">The ratio of the number of abstract classes (and interfaces) in the analyzed package to
+                        the total number of classes in the analyzed package. The range for this metric is 0 to 1, with A=0 indicating a
+                        completely concrete package and A=1 indicating a completely abstract package.</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;">Instability (I)</td>
+                    <td style="text-align: left;">The ratio of efferent coupling (Ce) to total coupling (Ce / (Ce + Ca)). This metric is an
+                        indicator of the package's resilience to change. The range for this metric is 0 to 1, with I=0 indicating a
+                        completely stable package and I=1 indicating a completely instable package.</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;">Distance (D)</td>
+                    <td style="text-align: left;">The perpendicular distance of a package from the idealized line A + I = 1. This metric is
+                        an indicator of the package's balance between abstractness and stability. A package squarely on the main sequence is
+                        optimally balanced with respect to its abstractness and stability. Ideal packages are either completely abstract and
+                        stable (x=0, y=1) or completely concrete and instable (x=1, y=0). The range for this metric is 0 to 1, with D=0
+                        indicating a package that is coincident with the main sequence and D=1 indicating a package that is as far from the
+                        main sequence as possible.</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;">Cycles</td>
+                    <td style="text-align: left;">Packages participating in a package dependency cycle are in a deadly embrace with respect
+                        to reusability and their release cycle. Package dependency cycles can be easily identified by reviewing the textual
+                        reports of dependency cycles. Once these dependency cycles have been identified with JDepend, they can be broken by
+                        employing various object-oriented techniques.</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;">Package Info</td>
+                    <td style="text-align: left;">A flag showing if there is a package-info class in the package. This is useful for
+                        package-level documentation, as well as being a home for package-level annotations.</td>
+                </tr>
+            </table>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,886 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="com.fasterxml.jackson.annotation">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="com.google.gson">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="com.google.gson.stream">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="com.rabbitmq.client">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.application.eventstore">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>2</Ca>
+                <Ce>8</Ce>
+                <A>0.25</A>
+                <I>0.8</I>
+                <D>0.05</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="StoredEventRepository.java">
+                    com.reallifedeveloper.common.application.eventstore.StoredEventRepository
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="EventStore.java">
+                    com.reallifedeveloper.common.application.eventstore.EventStore
+                </Class>
+                <Class sourceFile="EventStoringSubscriber.java">
+                    com.reallifedeveloper.common.application.eventstore.EventStoringSubscriber
+                </Class>
+                <Class sourceFile="StoredEvent.java">
+                    com.reallifedeveloper.common.application.eventstore.StoredEvent
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>com.reallifedeveloper.common.domain.event</Package>
+                <Package>jakarta.persistence</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.time</Package>
+                <Package>java.util</Package>
+                <Package>org.slf4j</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.reallifedeveloper.common.application.notification</Package>
+                <Package>com.reallifedeveloper.common.infrastructure.persistence</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.application.notification">
+            <Stats>
+                <TotalClasses>10</TotalClasses>
+                <ConcreteClasses>6</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>4</Ca>
+                <Ce>11</Ce>
+                <A>0.4</A>
+                <I>0.73</I>
+                <D>0.13</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="NotificationPublisher.java">
+                    com.reallifedeveloper.common.application.notification.NotificationPublisher
+                </Class>
+                <Class sourceFile="NotificationReader.java">
+                    com.reallifedeveloper.common.application.notification.NotificationReader
+                </Class>
+                <Class sourceFile="PublishedMessageTracker.java">
+                    com.reallifedeveloper.common.application.notification.PublishedMessageTracker
+                </Class>
+                <Class sourceFile="PublishedMessageTrackerRepository.java">
+                    com.reallifedeveloper.common.application.notification.PublishedMessageTrackerRepository
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Notification.java">
+                    com.reallifedeveloper.common.application.notification.Notification
+                </Class>
+                <Class sourceFile="NotificationFactory.java">
+                    com.reallifedeveloper.common.application.notification.NotificationFactory
+                </Class>
+                <Class sourceFile="NotificationLog.java">
+                    com.reallifedeveloper.common.application.notification.NotificationLog
+                </Class>
+                <Class sourceFile="NotificationLogId.java">
+                    com.reallifedeveloper.common.application.notification.NotificationLogId
+                </Class>
+                <Class sourceFile="NotificationPublisherTask.java">
+                    com.reallifedeveloper.common.application.notification.NotificationPublisherTask
+                </Class>
+                <Class sourceFile="NotificationService.java">
+                    com.reallifedeveloper.common.application.notification.NotificationService
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.reallifedeveloper.common.application.eventstore</Package>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>com.reallifedeveloper.common.domain.event</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.lang.runtime</Package>
+                <Package>java.time</Package>
+                <Package>java.util</Package>
+                <Package>org.slf4j</Package>
+                <Package>org.springframework.transaction.annotation</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.reallifedeveloper.common.infrastructure</Package>
+                <Package>com.reallifedeveloper.common.infrastructure.messaging</Package>
+                <Package>com.reallifedeveloper.common.infrastructure.persistence</Package>
+                <Package>com.reallifedeveloper.common.resource.notification</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.domain">
+            <Stats>
+                <TotalClasses>11</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>8</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>11</Ca>
+                <Ce>5</Ce>
+                <A>0.73</A>
+                <I>0.31</I>
+                <D>0.04</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="AbstractValueObject.java">
+                    com.reallifedeveloper.common.domain.AbstractValueObject
+                </Class>
+                <Class sourceFile="AggregateRoot.java">
+                    com.reallifedeveloper.common.domain.AggregateRoot
+                </Class>
+                <Class sourceFile="DomainEntity.java">
+                    com.reallifedeveloper.common.domain.DomainEntity
+                </Class>
+                <Class sourceFile="DomainObject.java">
+                    com.reallifedeveloper.common.domain.DomainObject
+                </Class>
+                <Class sourceFile="ObjectSerializer.java">
+                    com.reallifedeveloper.common.domain.ObjectSerializer
+                </Class>
+                <Class sourceFile="Repository.java">
+                    com.reallifedeveloper.common.domain.Repository
+                </Class>
+                <Class sourceFile="TimeService.java">
+                    com.reallifedeveloper.common.domain.TimeService
+                </Class>
+                <Class sourceFile="ValueObject.java">
+                    com.reallifedeveloper.common.domain.ValueObject
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="ClockTimeService.java">
+                    com.reallifedeveloper.common.domain.ClockTimeService
+                </Class>
+                <Class sourceFile="ErrorHandling.java">
+                    com.reallifedeveloper.common.domain.ErrorHandling
+                </Class>
+                <Class sourceFile="LogUtil.java">
+                    com.reallifedeveloper.common.domain.LogUtil
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.time</Package>
+                <Package>java.util</Package>
+                <Package>org.checkerframework.checker.nullness.qual</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.reallifedeveloper.common.application.eventstore</Package>
+                <Package>com.reallifedeveloper.common.application.notification</Package>
+                <Package>com.reallifedeveloper.common.domain.event</Package>
+                <Package>com.reallifedeveloper.common.domain.registry</Package>
+                <Package>com.reallifedeveloper.common.infrastructure</Package>
+                <Package>com.reallifedeveloper.common.infrastructure.jmx</Package>
+                <Package>com.reallifedeveloper.common.infrastructure.messaging</Package>
+                <Package>com.reallifedeveloper.common.infrastructure.persistence</Package>
+                <Package>com.reallifedeveloper.common.resource</Package>
+                <Package>com.reallifedeveloper.common.resource.documentation</Package>
+                <Package>com.reallifedeveloper.common.resource.notification</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.domain.event">
+            <Stats>
+                <TotalClasses>8</TotalClasses>
+                <ConcreteClasses>4</ConcreteClasses>
+                <AbstractClasses>4</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>4</Ca>
+                <Ce>8</Ce>
+                <A>0.5</A>
+                <I>0.67</I>
+                <D>0.17</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="AbstractDomainEvent.java">
+                    com.reallifedeveloper.common.domain.event.AbstractDomainEvent
+                </Class>
+                <Class sourceFile="DomainEvent.java">
+                    com.reallifedeveloper.common.domain.event.DomainEvent
+                </Class>
+                <Class sourceFile="DomainEventPublisher.java">
+                    com.reallifedeveloper.common.domain.event.DomainEventPublisher
+                </Class>
+                <Class sourceFile="DomainEventSubscriber.java">
+                    com.reallifedeveloper.common.domain.event.DomainEventSubscriber
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="EventSavingSubscriber.java">
+                    com.reallifedeveloper.common.domain.event.EventSavingSubscriber
+                </Class>
+                <Class sourceFile="LoggingDomainEventSubscriber.java">
+                    com.reallifedeveloper.common.domain.event.LoggingDomainEventSubscriber
+                </Class>
+                <Class sourceFile="SimpleDomainEventPublisher.java">
+                    com.reallifedeveloper.common.domain.event.SimpleDomainEventPublisher
+                </Class>
+                <Class sourceFile="ThreadLocalDomainEventPublisher.java">
+                    com.reallifedeveloper.common.domain.event.ThreadLocalDomainEventPublisher
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>com.reallifedeveloper.common.domain.registry</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.time</Package>
+                <Package>java.util</Package>
+                <Package>org.slf4j</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.reallifedeveloper.common.application.eventstore</Package>
+                <Package>com.reallifedeveloper.common.application.notification</Package>
+                <Package>com.reallifedeveloper.common.domain.registry</Package>
+                <Package>com.reallifedeveloper.common.infrastructure</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.domain.registry">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>1</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>2</Ca>
+                <Ce>5</Ce>
+                <A>0.5</A>
+                <I>0.71</I>
+                <D>0.21</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="AbstractDomainRegistry.java">
+                    com.reallifedeveloper.common.domain.registry.AbstractDomainRegistry
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="CommonDomainRegistry.java">
+                    com.reallifedeveloper.common.domain.registry.CommonDomainRegistry
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>com.reallifedeveloper.common.domain.event</Package>
+                <Package>java.lang</Package>
+                <Package>java.util.concurrent.locks</Package>
+                <Package>org.springframework.context</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.reallifedeveloper.common.domain.event</Package>
+                <Package>com.reallifedeveloper.common.infrastructure.persistence</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.infrastructure">
+            <Stats>
+                <TotalClasses>8</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>0</Ca>
+                <Ce>15</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="GsonNotificationReader.java">
+                    com.reallifedeveloper.common.infrastructure.GsonNotificationReader
+                </Class>
+                <Class sourceFile="GsonNotificationReader.java">
+                    com.reallifedeveloper.common.infrastructure.GsonNotificationReader$JsonUtil
+                </Class>
+                <Class sourceFile="GsonObjectSerializer.java">
+                    com.reallifedeveloper.common.infrastructure.GsonObjectSerializer
+                </Class>
+                <Class sourceFile="GsonObjectSerializer.java">
+                    com.reallifedeveloper.common.infrastructure.GsonObjectSerializer$LocalDateAdapter
+                </Class>
+                <Class sourceFile="GsonObjectSerializer.java">
+                    com.reallifedeveloper.common.infrastructure.GsonObjectSerializer$LocalDateTmeAdapter
+                </Class>
+                <Class sourceFile="GsonObjectSerializer.java">
+                    com.reallifedeveloper.common.infrastructure.GsonObjectSerializer$NotificationDeserializer
+                </Class>
+                <Class sourceFile="GsonObjectSerializer.java">
+                    com.reallifedeveloper.common.infrastructure.GsonObjectSerializer$ZonedDateTmeAdapter
+                </Class>
+                <Class sourceFile="Markdown4jHtmlProducer.java">
+                    com.reallifedeveloper.common.infrastructure.Markdown4jHtmlProducer
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.google.gson</Package>
+                <Package>com.google.gson.stream</Package>
+                <Package>com.reallifedeveloper.common.application.notification</Package>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>com.reallifedeveloper.common.domain.event</Package>
+                <Package>com.reallifedeveloper.common.resource.documentation</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.time</Package>
+                <Package>java.time.format</Package>
+                <Package>java.util</Package>
+                <Package>org.markdown4j</Package>
+                <Package>org.slf4j</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.infrastructure.jmx">
+            <Stats>
+                <TotalClasses>6</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>3</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>0</Ca>
+                <Ce>15</Ce>
+                <A>0.5</A>
+                <I>1</I>
+                <D>0.5</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="ConnectionPoolConfiguratorMXBean.java">
+                    com.reallifedeveloper.common.infrastructure.jmx.ConnectionPoolConfiguratorMXBean
+                </Class>
+                <Class sourceFile="LogConfiguratorMXBean.java">
+                    com.reallifedeveloper.common.infrastructure.jmx.LogConfiguratorMXBean
+                </Class>
+                <Class sourceFile="SystemInfoMXBean.java">
+                    com.reallifedeveloper.common.infrastructure.jmx.SystemInfoMXBean
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="Log4jConfigurator.java">
+                    com.reallifedeveloper.common.infrastructure.jmx.Log4jConfigurator
+                </Class>
+                <Class sourceFile="ServletContextSystemInfo.java">
+                    com.reallifedeveloper.common.infrastructure.jmx.ServletContextSystemInfo
+                </Class>
+                <Class sourceFile="TomcatConnectionPoolConfigurator.java">
+                    com.reallifedeveloper.common.infrastructure.jmx.TomcatConnectionPoolConfigurator
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>jakarta.servlet</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.util</Package>
+                <Package>java.util.jar</Package>
+                <Package>java.util.stream</Package>
+                <Package>org.apache.logging.log4j</Package>
+                <Package>org.apache.logging.log4j.core</Package>
+                <Package>org.apache.logging.log4j.core.config</Package>
+                <Package>org.apache.tomcat.jdbc.pool</Package>
+                <Package>org.slf4j</Package>
+                <Package>org.springframework.jmx.export.annotation</Package>
+                <Package>org.springframework.web.context</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.infrastructure.messaging">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>3</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>0</Ca>
+                <Ce>13</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="KafkaNotificationPublisher.java">
+                    com.reallifedeveloper.common.infrastructure.messaging.KafkaNotificationPublisher
+                </Class>
+                <Class sourceFile="KafkaSecurityConfiguration.java">
+                    com.reallifedeveloper.common.infrastructure.messaging.KafkaSecurityConfiguration
+                </Class>
+                <Class sourceFile="RabbitMQNotificationPublisher.java">
+                    com.reallifedeveloper.common.infrastructure.messaging.RabbitMQNotificationPublisher
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.rabbitmq.client</Package>
+                <Package>com.reallifedeveloper.common.application.notification</Package>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.nio.file</Package>
+                <Package>java.util</Package>
+                <Package>java.util.concurrent</Package>
+                <Package>org.apache.kafka.common.config</Package>
+                <Package>org.slf4j</Package>
+                <Package>org.springframework.core.io</Package>
+                <Package>org.springframework.kafka.core</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.infrastructure.persistence">
+            <Stats>
+                <TotalClasses>6</TotalClasses>
+                <ConcreteClasses>4</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>0</Ca>
+                <Ce>11</Ce>
+                <A>0.33</A>
+                <I>1</I>
+                <D>0.33</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="JpaPublishedMessageTrackerRepository.java">
+                    com.reallifedeveloper.common.infrastructure.persistence.JpaPublishedMessageTrackerRepository
+                </Class>
+                <Class sourceFile="JpaStoredEventRepository.java">
+                    com.reallifedeveloper.common.infrastructure.persistence.JpaStoredEventRepository
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BaseJpaEntity.java">
+                    com.reallifedeveloper.common.infrastructure.persistence.BaseJpaEntity
+                </Class>
+                <Class sourceFile="BaseJpaRepository.java">
+                    com.reallifedeveloper.common.infrastructure.persistence.BaseJpaRepository
+                </Class>
+                <Class sourceFile="JpaPublishedMessageTracker.java">
+                    com.reallifedeveloper.common.infrastructure.persistence.JpaPublishedMessageTracker
+                </Class>
+                <Class sourceFile="TimestampedJpaEntity.java">
+                    com.reallifedeveloper.common.infrastructure.persistence.TimestampedJpaEntity
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.reallifedeveloper.common.application.eventstore</Package>
+                <Package>com.reallifedeveloper.common.application.notification</Package>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>com.reallifedeveloper.common.domain.registry</Package>
+                <Package>jakarta.persistence</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.time</Package>
+                <Package>java.util</Package>
+                <Package>org.springframework.data.jpa.repository</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.resource">
+            <Stats>
+                <TotalClasses>2</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>2</Ca>
+                <Ce>12</Ce>
+                <A>0</A>
+                <I>0.86</I>
+                <D>0.14</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="BaseResource.java">
+                    com.reallifedeveloper.common.resource.BaseResource
+                </Class>
+                <Class sourceFile="ResourceUtil.java">
+                    com.reallifedeveloper.common.resource.ResourceUtil
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>jakarta.ws.rs</Package>
+                <Package>jakarta.ws.rs.core</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.net</Package>
+                <Package>java.time</Package>
+                <Package>java.time.format</Package>
+                <Package>java.util</Package>
+                <Package>java.util.stream</Package>
+                <Package>org.slf4j</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.reallifedeveloper.common.resource.documentation</Package>
+                <Package>com.reallifedeveloper.common.resource.notification</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.resource.documentation">
+            <Stats>
+                <TotalClasses>3</TotalClasses>
+                <ConcreteClasses>2</ConcreteClasses>
+                <AbstractClasses>1</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>1</Ca>
+                <Ce>9</Ce>
+                <A>0.33</A>
+                <I>0.9</I>
+                <D>0.23</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="HtmlProducer.java">
+                    com.reallifedeveloper.common.resource.documentation.HtmlProducer
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="DocumentationResource.java">
+                    com.reallifedeveloper.common.resource.documentation.DocumentationResource
+                </Class>
+                <Class sourceFile="DocumentationResource.java">
+                    com.reallifedeveloper.common.resource.documentation.DocumentationResource$1
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>com.reallifedeveloper.common.resource</Package>
+                <Package>jakarta.ws.rs</Package>
+                <Package>jakarta.ws.rs.core</Package>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.net</Package>
+                <Package>java.util</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>com.reallifedeveloper.common.infrastructure</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="com.reallifedeveloper.common.resource.notification">
+            <Stats>
+                <TotalClasses>4</TotalClasses>
+                <ConcreteClasses>4</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <HasPackageInfo>true</HasPackageInfo>
+                <Ca>0</Ca>
+                <Ce>13</Ce>
+                <A>0</A>
+                <I>1</I>
+                <D>0</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="NotificationLogRepresentation.java">
+                    com.reallifedeveloper.common.resource.notification.NotificationLogRepresentation
+                </Class>
+                <Class sourceFile="NotificationRepresentation.java">
+                    com.reallifedeveloper.common.resource.notification.NotificationRepresentation
+                </Class>
+                <Class sourceFile="NotificationResource.java">
+                    com.reallifedeveloper.common.resource.notification.NotificationResource
+                </Class>
+                <Class sourceFile="NotificationResource.java">
+                    com.reallifedeveloper.common.resource.notification.NotificationResource$Links
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>com.fasterxml.jackson.annotation</Package>
+                <Package>com.reallifedeveloper.common.application.notification</Package>
+                <Package>com.reallifedeveloper.common.domain</Package>
+                <Package>com.reallifedeveloper.common.resource</Package>
+                <Package>jakarta.ws.rs</Package>
+                <Package>jakarta.ws.rs.core</Package>
+                <Package>jakarta.xml.bind.annotation</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.invoke</Package>
+                <Package>java.net</Package>
+                <Package>java.time</Package>
+                <Package>java.util</Package>
+                <Package>org.slf4j</Package>
+            </DependsUpon>
+
+            <UsedBy>
+            </UsedBy>
+        </Package>
+
+        <Package name="jakarta.persistence">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="jakarta.servlet">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="jakarta.ws.rs">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="jakarta.ws.rs.core">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="jakarta.xml.bind.annotation">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.invoke">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.reflect">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.runtime">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.net">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.nio.file">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.time">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.time.format">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.concurrent">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.concurrent.locks">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.jar">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.stream">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.kafka.common.config">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.logging.log4j">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.logging.log4j.core">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.logging.log4j.core.config">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.tomcat.jdbc.pool">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.checkerframework.checker.nullness.qual">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.markdown4j">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.slf4j">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.springframework.context">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.springframework.core.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.springframework.data.jpa.repository">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.springframework.jmx.export.annotation">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.springframework.kafka.core">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.springframework.transaction.annotation">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.springframework.web.context">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="com.reallifedeveloper.common.application.eventstore">
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+            <Package>com.reallifedeveloper.common.domain.registry</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+        </Package>
+
+        <Package Name="com.reallifedeveloper.common.application.notification">
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+            <Package>com.reallifedeveloper.common.domain.registry</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+        </Package>
+
+        <Package Name="com.reallifedeveloper.common.domain.event">
+            <Package>com.reallifedeveloper.common.domain.registry</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+        </Package>
+
+        <Package Name="com.reallifedeveloper.common.domain.registry">
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+            <Package>com.reallifedeveloper.common.domain.registry</Package>
+        </Package>
+
+        <Package Name="com.reallifedeveloper.common.infrastructure">
+            <Package>com.reallifedeveloper.common.application.notification</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+            <Package>com.reallifedeveloper.common.domain.registry</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+        </Package>
+
+        <Package Name="com.reallifedeveloper.common.infrastructure.messaging">
+            <Package>com.reallifedeveloper.common.application.notification</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+            <Package>com.reallifedeveloper.common.domain.registry</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+        </Package>
+
+        <Package Name="com.reallifedeveloper.common.infrastructure.persistence">
+            <Package>com.reallifedeveloper.common.application.notification</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+            <Package>com.reallifedeveloper.common.domain.registry</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+        </Package>
+
+        <Package Name="com.reallifedeveloper.common.resource.notification">
+            <Package>com.reallifedeveloper.common.application.notification</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+            <Package>com.reallifedeveloper.common.domain.registry</Package>
+            <Package>com.reallifedeveloper.common.domain.event</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>

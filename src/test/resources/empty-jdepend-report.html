@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>JDepend Metrics Report</title>
+    <meta charset="UTF-8" />
+</head>
+
+<body>
+    <section><a id="JDepend_Metrics_Report"></a>
+        <h1>JDepend Metrics Report</h1>The following document contains the results of a <a
+            href="https://github.com/clarkware/jdepend">JDepend</a> metric analysis. The various metrics are defined at the bottom of this
+        document.<br /><br />
+        <section><a id="Summary"></a>
+            <h2>Summary</h2>
+            <table class="bodyTable bodyTableBorder">
+                <tr class="a">
+                    <th>Package</th>
+                    <th>TC</th>
+                    <th>CC</th>
+                    <th>AC</th>
+                    <th>Ca</th>
+                    <th>Ce</th>
+                    <th>A</th>
+                    <th>I</th>
+                    <th>D</th>
+                    <th>Cycles</th>
+                    <th>package-info</th>
+                </tr>
+            </table>
+        </section>
+        <section><a id="Packages"></a>
+            <h2>Packages</h2>There are no packages used.
+        </section>
+        <section><a id="Explanation"></a>
+            <h2>Explanation</h2>The following explanations are for quick reference and are lifted directly from the original JDepend
+            documentation. For more information, see the <a href="https://en.wikipedia.org/wiki/Software_package_metrics">Wikipedia</a>
+            page.<br /><br />
+            <table class="bodyTable bodyTableBorder">
+                <tr class="a">
+                    <th>Term</th>
+                    <th>Description</th>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;">Number of Classes (TC, CC, AC)</td>
+                    <td style="text-align: left;">The number of concrete and abstract classes (and interfaces) in the package is an
+                        indicator of the extensibility of the package.</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;">Afferent Couplings (Ca)</td>
+                    <td style="text-align: left;">The number of incoming dependencies, i.e., other packages that depend upon classes within
+                        the package. This is an indicator of the package's responsibility.</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;">Efferent Couplings (Ce)</td>
+                    <td style="text-align: left;">The number of outgoing dependencies, i.e., other packages that the classes in the package
+                        depend upon. This is an indicator of the package's independence.</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;">Abstractness (A)</td>
+                    <td style="text-align: left;">The ratio of the number of abstract classes (and interfaces) in the analyzed package to
+                        the total number of classes in the analyzed package. The range for this metric is 0 to 1, with A=0 indicating a
+                        completely concrete package and A=1 indicating a completely abstract package.</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;">Instability (I)</td>
+                    <td style="text-align: left;">The ratio of efferent coupling (Ce) to total coupling (Ce / (Ce + Ca)). This metric is an
+                        indicator of the package's resilience to change. The range for this metric is 0 to 1, with I=0 indicating a
+                        completely stable package and I=1 indicating a completely instable package.</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;">Distance (D)</td>
+                    <td style="text-align: left;">The perpendicular distance of a package from the idealized line A + I = 1. This metric is
+                        an indicator of the package's balance between abstractness and stability. A package squarely on the main sequence is
+                        optimally balanced with respect to its abstractness and stability. Ideal packages are either completely abstract and
+                        stable (x=0, y=1) or completely concrete and instable (x=1, y=0). The range for this metric is 0 to 1, with D=0
+                        indicating a package that is coincident with the main sequence and D=1 indicating a package that is as far from the
+                        main sequence as possible.</td>
+                </tr>
+                <tr class="b">
+                    <td style="text-align: left;">Cycles</td>
+                    <td style="text-align: left;">Packages participating in a package dependency cycle are in a deadly embrace with respect
+                        to reusability and their release cycle. Package dependency cycles can be easily identified by reviewing the textual
+                        reports of dependency cycles. Once these dependency cycles have been identified with JDepend, they can be broken by
+                        employing various object-oriented techniques.</td>
+                </tr>
+                <tr class="a">
+                    <td style="text-align: left;">Package Info</td>
+                    <td style="text-align: left;">A flag showing if there is a package-info class in the package. This is useful for
+                        package-level documentation, as well as being a home for package-level annotations.</td>
+                </tr>
+            </table>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+name: CD
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    uses: reallifedeveloper/github-workflows/.github/workflows/maven-release.yaml@main
+    secrets: inherit
+    permissions:
+      contents: write

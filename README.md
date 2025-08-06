@@ -47,4 +47,4 @@ To create a Maven site with documentation, including Javadoc and an example of t
 
     mvn -Pcoverage,pitest clean integration-test site
 
-For more information, see <https://reallifedeveloper.com/>.
+For more information, see <https://reallifedeveloper.com/maven-site/jdepend-maven-plugin>.

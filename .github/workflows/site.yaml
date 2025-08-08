@@ -1,9 +1,13 @@
 name: Build and publish a Maven site
 
 on:
-  push:
-    tags:
-      - v*
+  workflow_run:
+    workflows:
+      - CD
+    types:
+      - completed
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:

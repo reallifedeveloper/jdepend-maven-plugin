@@ -26,7 +26,7 @@
         <maven.version>3.8.1</maven.version>
         <maven.reporting.version>4.0.0</maven.reporting.version>
         <maven.plugin-tools.version>3.15.1</maven.plugin-tools.version>
-        <rld-build-tools.version>2.0.29</rld-build-tools.version>
+        <rld-build-tools.version>2.1.0</rld-build-tools.version>
     </properties>
 
     <dependencies>

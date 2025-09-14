@@ -86,9 +86,9 @@ public class JDependReportRendererTest {
             }
             Node controlNode = comparison.getControlDetails().getTarget();
             Node testNode = comparison.getTestDetails().getTarget();
-            if (controlNode instanceof Text && testNode instanceof Text) {
-                String controlText = ((Text) controlNode).getWholeText();
-                String testText = ((Text) testNode).getWholeText();
+            if (controlNode instanceof Text controlNodeText && testNode instanceof Text testNodeText) {
+                String controlText = controlNodeText.getWholeText();
+                String testText = testNodeText.getWholeText();
                 if (controlText.equals(testText)) {
                     return ComparisonResult.EQUAL;
                 } else if (StringUtils.trimAllWhitespace(controlText).equals(StringUtils.trimAllWhitespace(testText))) {

@@ -46,10 +46,19 @@ public class JDependReportTest {
     }
 
     @Test
-    public void gerenateShouldThrowMavenReportExceptionOnError() throws Exception {
+    public void generateShouldThrowMavenReportExceptionOnNullClassesDirectory() {
         report.setClassesDirectory(null);
+        report.setReportFile(new File("foo"));
         Exception e = assertThrows(MavenReportException.class, () -> report.generate(sink, null, LOCALE));
-        assertEquals("Error occurred during JDepend report generation", e.getMessage());
+        assertEquals("Fields have not been correctly set: classesDirectory=null, reportFile=foo", e.getMessage());
+    }
+
+    @Test
+    public void generateShouldThrowMavenReportExceptionOnNullReportFile() {
+        report.setClassesDirectory(new File("foo"));
+        report.setReportFile(null);
+        Exception e = assertThrows(MavenReportException.class, () -> report.generate(sink, null, LOCALE));
+        assertEquals("Fields have not been correctly set: classesDirectory=foo, reportFile=null", e.getMessage());
     }
 
     @Test

@@ -78,6 +78,7 @@ public class XmlReportParserTest {
         assertEquals(getFileName(className), xmlClass.sourceFile());
     }
 
+    @SuppressWarnings("StringSplitter")
     private static String getFileName(String className) {
         String[] components = className.split("\\.");
         String classNameWithoutPackage = components[components.length - 1];

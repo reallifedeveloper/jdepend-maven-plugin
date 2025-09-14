@@ -73,6 +73,7 @@ public class XmlReport {
      * Contains information from the {@code Package} element.
      */
     @Data
+    @SuppressWarnings("NullAway")
     public static class XmlPackage {
         @XmlAttribute(name = "name")
         private String name;
@@ -140,6 +141,7 @@ public class XmlReport {
      * Contains information from the {@code Class} element.
      */
     @Data
+    @SuppressWarnings("NullAway")
     public static class XmlClass {
         @XmlAttribute(name = "sourceFile")
         private String sourceFile;
@@ -152,6 +154,7 @@ public class XmlReport {
      * Contains information from the {@code Cycles} element.
      */
     @Data
+    @SuppressWarnings("NullAway")
     public static class XmlPackageWithCycle {
         @XmlAttribute(name = "Name")
         private String name;

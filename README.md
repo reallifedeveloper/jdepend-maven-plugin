@@ -48,3 +48,14 @@ To create a Maven site with documentation, including Javadoc and an example of t
     mvn -Pcoverage,pitest clean integration-test site
 
 For more information, see <https://reallifedeveloper.com/maven-site/jdepend-maven-plugin>.
+
+
+[![CI](https://github.com/reallifedeveloper/jdepend-maven-plugin/actions/workflows/main.yaml/badge.svg)](https://github.com/reallifedeveloper/jdepend-maven-plugin/actions/workflows/main.yaml)
+[![CD](https://github.com/reallifedeveloper/jdepend-maven-plugin/actions/workflows/release.yaml/badge.svg)](https://github.com/reallifedeveloper/jdepend-maven-plugin/actions/workflows/release.yaml)
+
+![Maven Central Version](https://img.shields.io/maven-central/v/com.reallifedeveloper/jdepend-maven-plugin)
+[![License](https://img.shields.io/:license-mit-blue.svg)](https://badges.mit-license.org)
+
+
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/reallifedeveloper/jdepend-maven-plugin/badge)](https://scorecard.dev/viewer/?uri=github.com/reallifedeveloper/jdepend-maven-plugin)
+[![OpenSSF Best Practices](https://bestpractices.coreinfrastructure.org/projects/10993/badge)](https://bestpractices.coreinfrastructure.org/projects/10993)

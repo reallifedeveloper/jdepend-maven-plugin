@@ -25,7 +25,7 @@
         <jdepend.version>3.0.1</jdepend.version>
         <maven.version>3.8.1</maven.version>
         <maven.reporting.version>4.0.0</maven.reporting.version>
-        <maven.plugin-tools.version>3.15.1</maven.plugin-tools.version>
+        <maven.plugin-tools.version>3.15.2</maven.plugin-tools.version>
 
         <rld-bom.version>20250920.1</rld-bom.version>
     </properties>
